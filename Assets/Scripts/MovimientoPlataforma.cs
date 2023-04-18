@@ -42,4 +42,13 @@ public class MovimientoPlataforma : MonoBehaviour
         Gizmos.DrawLine(controladorSuelo.transform.position, controladorSuelo.transform.position + Vector3.down * distancia);
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);     
+        }
+    }
+
 }
