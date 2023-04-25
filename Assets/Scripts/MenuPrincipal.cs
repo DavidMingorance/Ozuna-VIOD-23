@@ -21,4 +21,9 @@ public class MenuPrincipal : MonoBehaviour
         Debug.Log("Salir...");
         Application.Quit();
     }
+
+    public void Principio()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+    }
 }

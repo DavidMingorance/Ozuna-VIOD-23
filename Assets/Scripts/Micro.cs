@@ -19,6 +19,6 @@ public class Micro: MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.GetComponent<playerScript>() != null)
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
     }
 }

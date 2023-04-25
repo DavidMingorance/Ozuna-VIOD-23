@@ -5,6 +5,8 @@ using UnityEngine;
 public class playerScript : MonoBehaviour
 {
 
+    public bool sePuedeMover = true;
+    [SerializeField] private Vector2 velocidadRebote; 
    
 
     public float velocidadMovimiento;
@@ -45,6 +47,11 @@ public class playerScript : MonoBehaviour
             respawnPoint = transform.position;
         }
         
+    }
+
+    public void Rebote(Vector2 puntoGolpe)
+    {
+        rb.velocity = new Vector2(-velocidadRebote.x * puntoGolpe.x, velocidadRebote.y);
     }
 
     /* public void Recolocar()
