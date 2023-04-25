@@ -5,18 +5,20 @@ using UnityEngine;
 public class playerScript : MonoBehaviour
 {
 
-    float xInicial, yInicial;
+   
 
     public float velocidadMovimiento;
     private Rigidbody2D rb;
     public float fuerzaSalto = 4.5f;
 
+    private Vector3 respawnPoint;
+    public GameObject colisionIferior;
+
     void Start()
     {
 
         rb = GetComponent<Rigidbody2D>();
-        xInicial = transform.position.x;
-        yInicial = transform.position.y;
+        respawnPoint = transform.position;
     }
 
     private void Update()
@@ -28,13 +30,25 @@ public class playerScript : MonoBehaviour
         if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
         {
             rb.AddForce(new Vector2(0, fuerzaSalto), ForceMode2D.Impulse);
+            colisionIferior.transform.position = new Vector2(transform.position.x, colisionIferior.transform.position.y);
         }
     }
 
-   
-
-    public void Recolocar()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        transform.position = new Vector3(xInicial, yInicial, 0);
+        if (collision.tag == "ColisionInferior")
+        {
+            transform.position = respawnPoint;
+        }
+        else if (collision.tag == "CheckPoint")
+        {
+            respawnPoint = transform.position;
+        }
+        
     }
+
+    /* public void Recolocar()
+     {
+         transform.position = new Vector3(xInicial, yInicial, 0);
+     }*/
 }
