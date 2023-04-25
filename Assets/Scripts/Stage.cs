@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Stage : MonoBehaviour
 {
     public GameObject player;
+    public GameObject Mapa1;
+    public GameObject Mapa2;
 
     public GameObject upDestination;
     public GameObject downDestination;
@@ -25,12 +27,27 @@ public class Stage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position == player.transform.position && (Input.GetKeyDown(KeyCode.E)))
+        //ENTER MAP 1
+        if (Mapa1.transform.position == player.transform.position && (Input.GetKeyDown(KeyCode.E)))
         {
             SceneManager.LoadScene(2);
         }
 
-        if (transform.position == player.transform.position)
+        if (Mapa1.transform.position == player.transform.position)
+        {
+            currentStage = true;
+        }
+        else
+        {
+            currentStage = false;
+        }
+        //ENTER MAP 2
+        if (Mapa2.transform.position == player.transform.position && (Input.GetKeyDown(KeyCode.E)))
+        {
+            SceneManager.LoadScene(3);
+        }
+
+        if (Mapa2.transform.position == player.transform.position)
         {
             currentStage = true;
         }
@@ -39,6 +56,7 @@ public class Stage : MonoBehaviour
             currentStage = false;
         }
 
+        //MOVEMENT
         if (currentStage)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
