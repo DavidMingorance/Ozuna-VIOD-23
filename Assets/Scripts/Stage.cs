@@ -32,8 +32,8 @@ public class Stage : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
-
-        if (Mapa1.transform.position == player.transform.position)
+        
+        if (transform.position == player.transform.position)
         {
             currentStage = true;
         }
@@ -45,15 +45,6 @@ public class Stage : MonoBehaviour
         if (Mapa2.transform.position == player.transform.position && (Input.GetKeyDown(KeyCode.E)))
         {
             SceneManager.LoadScene(3);
-        }
-
-        if (Mapa2.transform.position == player.transform.position)
-        {
-            currentStage = true;
-        }
-        else
-        {
-            currentStage = false;
         }
 
         //MOVEMENT
@@ -93,6 +84,7 @@ public class Stage : MonoBehaviour
             }
         }
     }
+
 
     IEnumerator DoUp()
     {

@@ -8,6 +8,8 @@ TagManager:
   - GM
   - CheckPoint
   - ColisionInferior
+  - Mapa1
+  - Mapa2
   layers:
   - Default
   - TransparentFX
