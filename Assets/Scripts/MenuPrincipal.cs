@@ -24,6 +24,11 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Principio()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+        SceneManager.LoadScene(0);
+    }
+
+    public void Tutorial()
+    {
+        SceneManager.LoadScene(2);
     }
 }
