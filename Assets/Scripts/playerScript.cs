@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class playerScript : MonoBehaviour
 {
+    private AudioSource Jump;
+
+    
+
+
 
     public GameObject[] hearts;
 
@@ -34,6 +39,8 @@ public class playerScript : MonoBehaviour
         respawnPoint = transform.position;
         movimientoJugador = GetComponent<playerScript>();
         animator = GetComponent<Animator>();
+        Jump= GetComponent<AudioSource>();
+       
     }
 
     private void Update()
@@ -46,23 +53,30 @@ public class playerScript : MonoBehaviour
         {
             rb.AddForce(new Vector2(0, fuerzaSalto), ForceMode2D.Impulse);
             colisionIferior.transform.position = new Vector2(transform.position.x, colisionIferior.transform.position.y);
+            
+            Jump.Play();
+            
         }
         if (vida < 1)
         {
+            
             Destroy(hearts[0].gameObject);
         }
         else if (vida < 2)
         {
+        
             Destroy(hearts[1].gameObject);
         }
         else if (vida < 3)
         {
+            
             Destroy(hearts[2].gameObject);
         }
 
         if (vida == 0)
         {
-            SceneManager.LoadScene(0);
+            
+            SceneManager.LoadScene(5);
         }
 
     }
@@ -71,6 +85,7 @@ public class playerScript : MonoBehaviour
     {
         if (collision.tag == "ColisionInferior")
         {
+            vida--;
             transform.position = respawnPoint;
         }
         else if (collision.tag == "CheckPoint")

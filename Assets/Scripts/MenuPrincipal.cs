@@ -31,4 +31,9 @@ public class MenuPrincipal : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
