@@ -1,9 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerScript : MonoBehaviour
 {
+
+    public GameObject[] hearts;
+
+    [SerializeField] private float vida = 3;
+
+    private playerScript movimientoJugador;
+
+    [SerializeField] private float tiempoPerdida;
+
+    private Animator animator;
 
     public bool sePuedeMover = true;
     [SerializeField] private Vector2 velocidadRebote; 
@@ -21,6 +32,8 @@ public class playerScript : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         respawnPoint = transform.position;
+        movimientoJugador = GetComponent<playerScript>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -34,6 +47,24 @@ public class playerScript : MonoBehaviour
             rb.AddForce(new Vector2(0, fuerzaSalto), ForceMode2D.Impulse);
             colisionIferior.transform.position = new Vector2(transform.position.x, colisionIferior.transform.position.y);
         }
+        if (vida < 1)
+        {
+            Destroy(hearts[0].gameObject);
+        }
+        else if (vida < 2)
+        {
+            Destroy(hearts[1].gameObject);
+        }
+        else if (vida < 3)
+        {
+            Destroy(hearts[2].gameObject);
+        }
+
+        if (vida == 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -47,6 +78,26 @@ public class playerScript : MonoBehaviour
             respawnPoint = transform.position;
         }
         
+    }
+
+    public void Rebotar(int daño, Vector2 posicion)
+    {
+        vida -= daño;
+        animator.SetTrigger("Golpe");
+        StartCoroutine(PerderControl());
+        movimientoJugador.Rebote(posicion);
+    }
+
+    public void TomarDaño(float daño)
+    {
+        vida -= daño;
+
+    }
+    private IEnumerator PerderControl()
+    {
+        movimientoJugador.sePuedeMover = false;
+        yield return new WaitForSeconds(tiempoPerdida);
+        movimientoJugador.sePuedeMover = true;
     }
 
     public void Rebote(Vector2 puntoGolpe)
