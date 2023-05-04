@@ -24,6 +24,8 @@ public class MenuPausa : MonoBehaviour
                 Pausa();
             }
         }
+
+       
     }
     public void Pausa()
     {
@@ -52,4 +54,6 @@ public class MenuPausa : MonoBehaviour
         Debug.Log("Cerrando juego");
         Application.Quit();
     }
+
+
 }

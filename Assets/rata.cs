@@ -8,7 +8,7 @@ public class rata : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<Rebote>().Rebotar(20, other.GetContact(0).normal);
+            other.gameObject.GetComponent<playerScript>().Rebotar(1, other.GetContact(0).normal);
         }
     }
 }
