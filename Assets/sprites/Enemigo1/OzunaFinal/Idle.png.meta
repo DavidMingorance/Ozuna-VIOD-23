@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: da46a13bb2f26ff44930dffc56ef981d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle_14
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 105
+        width: 202
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b0d51da8e203c41a7f3f4cde619fdb
+      internalID: 427898865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_17
+      rect:
+        serializedVersion: 2
+        x: 3263
+        y: 105
+        width: 202
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4da87c5da2eb8845b99e1623ed3cc69
+      internalID: 45099310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_20
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 105
+        width: 202
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7509491b40d29184bba697fc7055561a
+      internalID: -943353537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Idle_28: -1119799087
+      Idle_4: -1202479727
+      Idle_36: 247811862
+      Idle_32: -1097451194
+      Idle_12: 530595227
+      Idle_22: 1726538240
+      Idle_17: 45099310
+      Idle_45: -1698766301
+      Idle_21: 2116127925
+      Idle_50: 76265039
+      Idle_42: 2091766908
+      Idle_8: 699600050
+      Idle_3: -1105531379
+      Idle_16: -574405394
+      Idle_25: 1569559904
+      Idle_31: -418217329
+      Idle_6: -471290028
+      Idle_7: -1197813219
+      Idle_20: -943353537
+      Idle_13: -1265685062
+      Idle_24: -2121734861
+      Idle_51: 1266276645
+      Idle_11: 28631746
+      Idle_59: 265875165
+      Idle_61: -931677777
+      Idle_37: 1927534372
+      Idle_39: -92949910
+      Idle_9: 99216705
+      Idle_47: 891577905
+      Idle_52: -22358236
+      Idle_27: 44089190
+      Idle_18: -1432619143
+      Idle_19: 1819028764
+      Idle_48: -22062002
+      Idle_40: 1743846994
+      Idle_34: -1588045777
+      Idle_26: -1616661109
+      Idle_56: 266128713
+      Idle_1: 1504029190
+      Idle_14: 427898865
+      Idle_10: -1497153336
+      Idle_33: 2142722757
+      Idle_53: 1277291405
+      Idle_5: 20844401
+      Idle_29: 1172776243
+      Idle_0: -1006425245
+      Idle_30: 1786934942
+      Idle_23: 1643490796
+      Idle_43: -1937676235
+      Idle_55: -1477151237
+      Idle_58: 524889074
+      Idle_38: 155883666
+      Idle_54: -191805254
+      Idle_49: -2111099781
+      Idle_15: 1911221140
+      Idle_60: -2022824065
+      Idle_35: -46933895
+      Idle_2: 1982926068
+      Idle_41: 724756288
+      Idle_46: -1014287134
+      Idle_44: -1975146395
+      Idle_57: -238529636
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

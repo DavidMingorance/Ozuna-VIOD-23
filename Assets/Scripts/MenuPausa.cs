@@ -55,5 +55,10 @@ public class MenuPausa : MonoBehaviour
         Application.Quit();
     }
 
+    public void SalirNivel()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 
 }
