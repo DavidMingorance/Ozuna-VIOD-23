@@ -14,7 +14,9 @@ public class MovimientoPlataforma : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    public float targetTime = 2f;
 
+ 
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -45,9 +47,25 @@ public class MovimientoPlataforma : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);     
+            /*          
+             *         Destroy(rb);
+
+                       targetTime -= Time.deltaTime;
+
+                       if (targetTime <= 0.0f)
+                       {
+                           timerEnded();
+                       }
+
+
+                       void timerEnded()
+                       {
+                           Destroy(gameObject);
+                       }
+           */
+            Destroy(gameObject);
         }
     }
 
