@@ -7,6 +7,10 @@ public class playerScript : MonoBehaviour
 {
     private AudioSource Jump;
 
+    public Sprite sprite2;
+
+    public float targetTime = 1.2f;
+
     public SpriteRenderer sr;
 
     public GameObject[] hearts;
@@ -30,18 +34,19 @@ public class playerScript : MonoBehaviour
 
     private Vector3 respawnPoint;
     public GameObject colisionIferior;
+    public Animator anim;
 
     void Start()
     {
-
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         respawnPoint = transform.position;
         movimientoJugador = GetComponent<playerScript>();
         animator = GetComponent<Animator>();
         Jump= GetComponent<AudioSource>();
         sr = GetComponent<SpriteRenderer>();
-        
-       
+
+
     }
 
     private void Update()
@@ -73,13 +78,25 @@ public class playerScript : MonoBehaviour
             
             Destroy(hearts[2].gameObject);
         }
-
         if (vida == 0)
         {
-            
-            SceneManager.LoadScene(5);
+            StartCoroutine(dead()); 
         }
+    }
 
+    private IEnumerator dead()
+    {
+        anim.SetBool("dead", true);
+        yield return new WaitForSeconds(1.0f);
+        anim.GetComponent<Animator>().enabled = false;
+        ChangeSprite();
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(5);
+    }
+
+    public void ChangeSprite()
+    {
+        sr.sprite = sprite2;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -114,6 +131,7 @@ public class playerScript : MonoBehaviour
         movimientoJugador.sePuedeMover = false;
         yield return new WaitForSeconds(tiempoPerdida);
         movimientoJugador.sePuedeMover = true;
+
     }
 
     public void Rebote(Vector2 puntoGolpe)

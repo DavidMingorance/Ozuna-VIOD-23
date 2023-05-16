@@ -27840,7 +27840,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1472100452}
         m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
-        m_MethodName: Reaunudar
+        m_MethodName: Reiniciar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28005,7 +28005,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714840433}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -177.04382, y: -0.54015803, z: 0.53005546}
+  m_LocalPosition: {x: -175.72, y: -0.54015803, z: 0.53005546}
   m_LocalScale: {x: 3.4099905, y: 3.4099905, z: 3.4099905}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28124,7 +28124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1472100452}
         m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
-        m_MethodName: Reaunudar
+        m_MethodName: SalirNivel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

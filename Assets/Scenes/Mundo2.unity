@@ -1640,7 +1640,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.024999976, y: 0.018750012, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -55174,6 +55174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3555de2dda145dc4095c5d0d37075d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite2: {fileID: -1372550570, guid: 688b42de11f942844a954f25b5150521, type: 3}
+  targetTime: 0.9
   sr: {fileID: 0}
   hearts:
   - {fileID: 2084966589}
@@ -55186,6 +55188,7 @@ MonoBehaviour:
   velocidadMovimiento: 8
   fuerzaSalto: 35
   colisionIferior: {fileID: 1995986419}
+  anim: {fileID: 0}
 --- !u!50 &451659342
 Rigidbody2D:
   serializedVersion: 4
@@ -58019,7 +58022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640260613542441301, guid: 4f9d041e5bc1f464d8d3ac4e4c95573a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.850648
+      value: 4.244
       objectReference: {fileID: 0}
     - target: {fileID: 1640260613542441301, guid: 4f9d041e5bc1f464d8d3ac4e4c95573a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -58378,7 +58381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640260613542441301, guid: 4f9d041e5bc1f464d8d3ac4e4c95573a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.100648
+      value: 4.747
       objectReference: {fileID: 0}
     - target: {fileID: 1640260613542441301, guid: 4f9d041e5bc1f464d8d3ac4e4c95573a, type: 3}
       propertyPath: m_LocalPosition.z
