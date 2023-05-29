@@ -62282,26 +62282,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 147, y: -5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 150, y: -5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 233, y: -5, z: 0}
     second:
       serializedVersion: 2
@@ -63098,7 +63078,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: efb5ac1e721822d4daecca844bedaa73, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 0777eb9947a596e4ca571046bee761bc, type: 2}
-  - m_RefCount: 13
+  - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: 20b1d677613516f4eaf5357cb4e66c18, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 6a912f221566cc64fb98b060c6c6e852, type: 2}
@@ -63137,7 +63117,7 @@ Tilemap:
     m_Data: {fileID: -391465467, guid: 2de7fedf7a78cab49b0ec66f0df50cab, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 13
+  - m_RefCount: 11
     m_Data: {fileID: 971364663, guid: 2de7fedf7a78cab49b0ec66f0df50cab, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -2061665815, guid: 2de7fedf7a78cab49b0ec66f0df50cab, type: 3}
@@ -63172,7 +63152,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1636847234, guid: 2de7fedf7a78cab49b0ec66f0df50cab, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 100
+  - m_RefCount: 98
     m_Data:
       e00: 1
       e01: 0
@@ -63191,7 +63171,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 100
+  - m_RefCount: 98
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
