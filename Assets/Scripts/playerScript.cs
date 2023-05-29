@@ -90,7 +90,7 @@ public class playerScript : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         anim.GetComponent<Animator>().enabled = false;
         ChangeSprite();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(5);
     }
 

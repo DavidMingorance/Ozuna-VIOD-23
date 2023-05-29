@@ -31,6 +31,11 @@ public class MenuPrincipal : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+    public void Creditos()
+    {
+        SceneManager.LoadScene(7);
+    }
+
 
     public void GameOver()
     {
